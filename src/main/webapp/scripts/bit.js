@@ -1,8 +1,8 @@
 $(document).ready(function (evt) {
     $("#loginBtn").click(function (e) {
         //alert("Hello")
-        var username = $("#username");
-        var password = $("#password");
+        var username = $("#username").value;
+        var password = $("#password").value;
         var url = "/login";
         var obj = {};
         obj.username = username;
@@ -14,7 +14,6 @@ $(document).ready(function (evt) {
             data: data
         }).success(function (response) {
             $("#response").html(response);
-            alert("success")
         }).error(function (e) {
             alert("error" + e.responseText)
         });
