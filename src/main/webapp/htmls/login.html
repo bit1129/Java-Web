@@ -15,15 +15,20 @@
     </style>
     <script type="text/javascript" src="/scripts/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="/scripts/bit.js"></script>
-
-
 </head>
-
-
-
+        <body>
             <div>Username: <input type="text" id="username"/></div>
             <div>Password: <input type="password" id="password"/></div>
             <div><button id="loginBtn">Login</button> </div>
             <p id="response"></p>
-</body>
+            <div><button id="labelValueButton">Get Label Value</button> </div>
+
+            <div class="price_range">
+                <p><span class="dealerPrice"></span></p>
+                <p style="margin-bottom:20px;">车商零售价  <label class="dealerLowSoldPrice">100</label> - <label class="dealerHighSoldPrice"></label>万</p>
+                <div class="icon">
+                    <img src="https://dn-che300-assets.qbox.me/partner/theme/images/inf.png" alt=""/>
+                </div>
+            </div>
+        </body>
 </html>

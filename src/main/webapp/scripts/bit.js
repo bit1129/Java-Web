@@ -17,7 +17,10 @@ $(document).ready(function (evt) {
         }).error(function (e) {
             alert("error" + e.responseText)
         });
+    });
 
-
-    })
+    $("#labelValueButton").click(function(evt){
+        var v = $("label.dealerLowSoldPrice").html();
+        alert(v);
+    });
 });
