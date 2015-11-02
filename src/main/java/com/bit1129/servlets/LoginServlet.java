@@ -31,6 +31,9 @@ public class LoginServlet extends HttpServlet{
     //For testing purpose, should not
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        doPost(req, resp);
+        String method = req.getParameter("method");
+        if (method != null && "out".equals(method)) {
+            resp.getWriter().write("Hello,From out.com");
+        }
     }
 }

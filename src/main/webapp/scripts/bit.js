@@ -23,4 +23,26 @@ $(document).ready(function (evt) {
         var v = $("label.dealerLowSoldPrice").html();
         alert(v);
     });
+
+    $("#jsonPBtn").click(function(evt){
+        alert("Hello,jsonPBtn")
+        $.ajax({
+            dataType: 'jsonp',
+            url: '/login?user=123&method=out',
+            success: function(data){
+                debugger
+                alert("Success," + data)
+            },
+            error: function(error) {
+                debugger
+                alert("Error, " + error)
+            }
+        });
+
+
+
+
+    });
+
+
 });
